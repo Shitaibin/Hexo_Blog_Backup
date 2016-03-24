@@ -16,3 +16,10 @@ tags: ['Github']
 
 原因：本地Git配置的邮箱与Github上面配置的邮箱不一致，具体原因是大小写导致的，本地中有大写字母，而Github上面全为小写。
 
+
+## 无法commit或add已经modified的文件(夹)
+
+
+明明显示修改了，但就是提交不上去，原因是那个目录是子模块，有自己的git信息。
+
+参考资料：[时光机1号](http://stackoverflow.com/questions/5186371/problem-with-modified-files-showing-up-in-git-but-not-updating)，[时光机2号](http://stackoverflow.com/questions/7726131/git-add-a-is-not-adding-all-modified-files-in-directories)。
