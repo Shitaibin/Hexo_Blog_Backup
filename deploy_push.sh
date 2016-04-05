@@ -1,18 +1,20 @@
-hexo clean
 echo "<<<<<<<<<<<<<<<<<<<<<<<<<< clean >>>>>>>>>>>>>>>>>>>"
-hexo generate
+hexo clean
 echo "<<<<<<<<<<<<<<<<<<<<<<<<<< generate >>>>>>>>>>>>>>>>"
-hexo deploy
+hexo generate
 echo "<<<<<<<<<<<<<<<<<<<<<<<<<< deploy >>>>>>>>>>>>>>>>>>"
+hexo deploy
+
 
 git status -s
-git add -A
 echo "<<<<<<<<<<<<<<<<<<<<<<<<<< add >>>>>>>>>>>>>>>>>>>>>"
+git add -A
 git status -s
 
-git commit -m 'auto backup with deploy'
 echo "<<<<<<<<<<<<<<<<<<<<<<<<<< commit >>>>>>>>>>>>>>>>>>"
+git commit -m 'auto backup with deploy'
 git status -s
 
-git push origin master
 echo "<<<<<<<<<<<<<<<<<<<<<<<<< push >>>>>>>>>>>>>>>>>>>>>"
+git push origin master
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< done >>>>>>>>>>>>>>>>>>>>>"
