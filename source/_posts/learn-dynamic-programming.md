@@ -103,3 +103,8 @@ tags: ['动态规划']
 
 
 
+---------------
+
+更新于：2016年4月6日
+
+一篇对易理解的DP文章：[从新手到专家](http://www.hawstein.com/posts/dp-novice-to-advanced.html)
