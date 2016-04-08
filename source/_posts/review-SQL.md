@@ -498,6 +498,10 @@ GROUP BY vend_id, prod_id;
 - MySQL允许HAVING中使用列/字段的别名。
 
 ```SQL
+-- 从订单列表中，选择哪些下过两次订单的用户。
+-- 首先，你需要的是每个用户的信息，所以需要使用group by分组，
+-- 然后，你需要计算每个用户下了多少订单，所以使用count
+-- 最后，过滤，因为是对group的结果进行过滤，所以使用having，而不是where。
 SELECT cust_id, COUNT(*) AS orders
 FROM orders
 GROUP BY cust_id
@@ -509,6 +513,9 @@ FROM orders
 GROUP BY cust_id
 HAVING orders >= 2;
 ```
+
+**腾讯才曾经考过这样一个题目**：有张表，存放的是不同用户对不同品牌汽车的评分，每个用户对每个汽车有个评分，要求查询出给2辆及以上做出评分的用户信息。
+
 
 - WHERE在数据分组前进行过滤，HAVING在数据分组后进行过滤。这是一个重要的区别，WHERE排除的行不包括在分组中。这可能会改变计算值，从而影响HAVING子句中基于这些值过滤掉的分组。
 - 同时是使用WHERE, HAVING。
