@@ -26,6 +26,8 @@ tags: ['malloc']
 1. realloc的原理，及优化
 
 
+<!-- more -->
+
 ### 没讲什么
 1. 如果free时，不还块会怎样。
 1. BLOCK_SIZE大小是如何确定的。
@@ -123,10 +125,12 @@ BLOCK_SIZE应当改为32。
 
 ### 代码汇总
 
+
+<!--
 <script src="https://gist.github.com/Shitaibin/8f8d80c45c9c4d23e4a2f264c49349a4.js"></script>
+-->
 
-
-
+[Gist](https://gist.github.com/Shitaibin/8f8d80c45c9c4d23e4a2f264c49349a4)
 
 
 
@@ -152,7 +156,6 @@ http://blog.codinglabs.org/articles/a-malloc-tutorial.html
 
 1. 扩展阅读：
     - Linux 内存管理：内存映射，主要讲mmap： http://blog.jobbole.com/91891/
-    - 内存分配隐藏成本：http://blog.jobbole.com/82698/
-    - 什么是堆和栈：http://blog.jobbole.com/75321/
-    - Linux内存点滴，泛化，好：http://blog.jobbole.com/45733/
+    - 什么是堆和栈（翻译自SO）：http://blog.jobbole.com/75321/
+    - Linux内存点滴，用户进程内存空间。结合将了malloc和操作系统层面的内存管理，但文中也是有错误的，比如L4，L5（访问free的指针）执行，free后，那段空间可能并没有还给OS，因此页表中还存在映射，不会出现段错误，但如果还给了OS，页表中映射被取消，再去访问，才出现错误。：http://blog.jobbole.com/45733/
     - 那些数据结构与算法在Linux内核中的使用：http://blog.jobbole.com/52669/
