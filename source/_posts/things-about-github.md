@@ -23,3 +23,22 @@ tags: ['Github']
 明明显示修改了，但就是提交不上去，原因是那个目录是子模块，有自己的git信息。
 
 参考资料：[时光机1号](http://stackoverflow.com/questions/5186371/problem-with-modified-files-showing-up-in-git-but-not-updating)，[时光机2号](http://stackoverflow.com/questions/7726131/git-add-a-is-not-adding-all-modified-files-in-directories)。
+
+## http代理带来的问题
+
+在push操作的时候出现了这个问题：```error: RPC failed; result=56, HTTP code = 0```。
+
+```shell
+git push ...
+error: RPC failed; result=56, HTTP code = 200
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+Everything up-to-date
+
+```
+
+原因：git设置的http的缓冲区太小了。
+
+调大即可解决：```git config http.postBuffer 524288000```。
+
+[参考资料](https://flyingtomoon.com/2013/10/02/using-bitbucket-as-assignment-submission-system-for-the-courses/)
