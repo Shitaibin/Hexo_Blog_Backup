@@ -26,15 +26,14 @@ tags: ['Github']
 
 ## http代理带来的问题
 
-在push操作的时候出现了这个问题：```error: RPC failed; result=56, HTTP code = 0```。
+在push操作的时候出现了这个问题：`error: RPC failed; result=56, HTTP code = 0`。
 
-```shell
+```
 git push ...
 error: RPC failed; result=56, HTTP code = 200
 fatal: The remote end hung up unexpectedly
 fatal: The remote end hung up unexpectedly
 Everything up-to-date
-
 ```
 
 原因：git设置的http的缓冲区太小了。
