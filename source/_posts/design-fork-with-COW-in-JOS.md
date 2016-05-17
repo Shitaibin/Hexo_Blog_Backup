@@ -1,6 +1,6 @@
 title: JOS中具有写时拷贝的fork设计
 date: 2016-05-17 13:44:39
-tags: ['JOS', 'fork']
+tags: ['JOS', 'fork', '操作系统']
 ---
 
 
