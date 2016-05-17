@@ -1,6 +1,6 @@
-title: design fork with COW in JOS
+title: JOS中具有写时拷贝的fork设计
 date: 2016-05-17 13:44:39
-tags:
+tags: ['JOS', 'fork']
 ---
 
 
