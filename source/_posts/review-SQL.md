@@ -17,6 +17,8 @@ MySQL 5.1在线参考手册：[时光机](http://doc.mysql.cn/mysql5/refman-5.1-
 
 ## 限制行号和偏倚量。
 
+从第OFFSET+1开始，共获取LIMIT个结果。可以用来求某列，第OFFSET+1大或小的行。
+
 ```SQL
 SELECT *
 FROM products
