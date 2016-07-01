@@ -49,7 +49,7 @@ tags: ["Life"]
 ![](http://7xlogg.com1.z0.glb.clouddn.com/lanshiren-5.JPG)
 只有夏天的填空，才可以这么蓝。
 
-![](http://7xlogg.com1.z0.glb.clouddn.com/lanshiren-5-2.JPG)
+![](http://7xlogg.com1.z0.glb.clouddn.com/lanshiren-5-2.jpg)
  
 
 
