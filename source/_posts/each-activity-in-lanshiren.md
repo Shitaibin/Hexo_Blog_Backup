@@ -110,4 +110,5 @@ tags: ["Life"]
 第18次，想把超毅走成休闲，难度还是挺大的，同超毅一样，梅雨时节的杭州，无雨不杭州，幸好，最后一丝晴天。
 ![](http://7xlogg.com1.z0.glb.clouddn.com/lanshiren-18.jpg) 
 
-第19次，7月2日，即将开始。。。
+第19次，问茶之道，烈日当空，微风越过山脊，发丝随风而起，茶博凉亭之下，七八人，几局狼杀，几局卧底。
+![](http://7xlogg.com1.z0.glb.clouddn.com/lanshiren-19.jpg)
