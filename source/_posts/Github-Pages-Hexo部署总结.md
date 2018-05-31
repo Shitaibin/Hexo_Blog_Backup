@@ -1,7 +1,7 @@
 title: "Github Pages + Hexo部署总结"
 date: 2015-05-01 16:47:40
 tags: ["Github Pages", "Hexo"]
-category: ["教程"]
+
 ---
 
 
