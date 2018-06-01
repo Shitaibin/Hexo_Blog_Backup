@@ -1,4 +1,4 @@
-1. 经常备份。
-2. 自动更新到百度网盘并不可靠，保存了许多临时的脏文件。
-3. 可以经博文markdown文件自动备份的网盘。
 
+# Branch
+master: for blog files
+hexo_resource: for original static files, such as config, theme, and posts
